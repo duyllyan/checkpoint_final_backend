@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+spring:
+  application:
+    name: eureka-service
+  zipkin:
+    base-url: http://zipkin-service:9411/
+server:
+  port: ${PORT:8761}
